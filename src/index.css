@@ -1,13 +1,43 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic);
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,200,300,regular,500,600,700,800,900);
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "IBM Plex Mono", "Noto Sans KR", sans-serif;
+}
+
+.container {
+  padding: 1rem; /*좌우로 간격을 살짝만듬*/
+  width: 100%;
+  margin: auto; /* 좌우 중앙이됨?*/
+  max-width: 1280px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Common Button Style */
+.btn {
+  padding: 0.25rem 0.75rem;
+  background: rgb(192, 45, 45);
+  color: #fff;
+  font-size: 0.875rem;
+  border-radius: 0.25rem;
 }
