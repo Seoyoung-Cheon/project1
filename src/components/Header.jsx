@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import profile from "../assets/profile.webp";
 
 const Header = () => {
-  const isLoggedIn = false;
+  const isLoggedIn = true;
 
   return (
     <div className="w-full shadow-custom py-4">
